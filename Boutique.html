@@ -12,7 +12,7 @@
             margin: 0;
             padding: 0;
             background-image: url('img/bgg.png'); /* Définir l'image de fond */
-            background-size: cover; /* Couvrir toute la fenêtre d'affichage */
+            background-size: auto; /* Couvrir toute la fenêtre d'affichage */
             background-attachment: fixed; /* Image de fond fixe */
             background-color: transparent; /* Couleur de fond transparente */
         }
@@ -26,12 +26,12 @@
         }
 
         .logo {
-            width: 60px;
-            height: 60px;
-            position: absolute;
-  top: 0;
-  left: 0;
-        }
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 30px; /* Ajustez l'espacement vertical ici */
+    right: 10px; /* Ajustez l'espacement horizontal ici */
+}
         .minilogo {
             width: 20px;
             height: 20px;
@@ -180,10 +180,10 @@ th, td {
                                     <td><img src="img/grain-classico.png" class="prodimg"></td></br>
                                 </tr>
                                 <tr>
-                                    <td><U>Grain Classico</U></td>
+                                    <td><B>Grain Classico</B></td>
                                 </tr>
                                 <tr>
-                                    <td>60% Arabica 40% robusta  intensité 4/5 1kg</td>
+                                    <td>60% Arabica 40% Robusta  intensité 4/5 1Kg</td>
                                 </tr>
                                 <tr>
                                     <td><strong>280 DH</strong></td>
@@ -198,10 +198,10 @@ th, td {
                                     <td><img src="img/Ricco.png" class="prodimg"></td>
                                 </tr>
                                 <tr>
-                                    <td><U>Grain Ricco</U></td>
+                                    <td><B>Grain Ricco</B></td>
                                 </tr>
                                 <tr>
-                                    <td>70% Arabica 30% Robusta  intensité 3/5 1 KG</td>
+                                    <td>70% Arabica 30% Robusta  intensité 3/5 1Kg</td>
                                 </tr>
                                 <tr>
                                     <td><strong>340 DH</strong></td>
@@ -216,10 +216,10 @@ th, td {
                                     <td><img src="img/bio.png" class="prodimg"></td>
                                 </tr>
                                 <tr>
-                                    <td><U>Grain BIO Organic</U></td>
+                                    <td><B>Grain BIO Organic</B></td>
                                 </tr>
                                 <tr>
-                                    <td>100% Arabica 100% BIO  intensité 3/5 1KG</td>
+                                    <td>100% Arabica 100% BIO  intensité 3/5 1Kg</td>
                                 </tr>
                                 <tr>
                                     <td><strong>450 DH</strong></td>
@@ -240,7 +240,7 @@ th, td {
                                     <td><img src="img/intenso.png" class="prodimg"></td></br>
                                 </tr>
                                 <tr>
-                                    <td><U>Capsule comp Nes Intenso</U></td>
+                                    <td><B>Capsule comp Nes Intenso</B></td>
                                 </tr>
                                 <tr>
                                     <td>Intensité 5/5 60% Arabica</td>
@@ -258,7 +258,7 @@ th, td {
                                     <td><img src="img/cremoso.png" class="prodimg"></td>
                                 </tr>
                                 <tr>
-                                    <td><U>Capsule comp Nes Cremoso</U></td>
+                                    <td><B>Capsule comp Nes Cremoso</B></td>
                                 </tr>
                                 <tr>
                                     <td>Intensité 4/5 80% Arabica</td>
@@ -276,7 +276,7 @@ th, td {
                                     <td><img src="img/arabica.png" class="prodimg"></td>
                                 </tr>
                                 <tr>
-                                    <td><U>Capsule comp Nes Arabica</U></td>
+                                    <td><B>Capsule comp Nes Arabica</B></td>
                                 </tr>
                                 <tr>
                                     <td>Intensité 3/5 100% Arabica</td>
@@ -294,7 +294,7 @@ th, td {
                                     <td><img src="img/deca.png" class="prodimg"></td>
                                 </tr>
                                 <tr>
-                                    <td><U>Capsule comp Nes Deca</U></td>
+                                    <td><B>Capsule comp Nes Deca</B></td>
                                 </tr>
                                 <tr>
                                     <td>Intensité 3/5</td>
@@ -318,7 +318,7 @@ th, td {
                                     <td><img src="img/moulumoka.png" class="prodimg"></td></br>
                                 </tr>
                                 <tr>
-                                    <td><U>Moulu Moka</U></td>
+                                    <td><B>Moulu Moka</B></td>
                                 </tr>
                                 <tr>
                                     <td>100% Arabica 250G</td>
@@ -334,7 +334,7 @@ th, td {
                                     <td><img src="img/mouluespreso.png" class="prodimg"></td></br>
                                 </tr>
                                 <tr>
-                                    <td><U>Moulu Espresso</U></td>
+                                    <td><B>Moulu Espresso</B></td>
                                 </tr>
                                 <tr>
                                     <td>100% Arabica  pour presse 250G</td>
@@ -350,7 +350,7 @@ th, td {
                                     <td><img src="img/mouludeca.png" class="prodimg"></td></br>
                                 </tr>
                                 <tr>
-                                    <td><U>Moulu Deca</U></td>
+                                    <td><B>Moulu Deca</B></td>
                                 </tr>
                                 <tr>
                                     <td>100% Arabica</td>
@@ -373,7 +373,7 @@ th, td {
                                     <td><img src="img/mach1.png" class="prodimg" onclick="zoomImage(this)"></td></br>
                                 </tr>
                                 <tr>
-                                    <td><U>Machine mini tré</U></td>
+                                    <td><B>Machine mini tré</B></td>
                                 </tr>
                                 <tr>
                                     <td>Capsule comp Nes Vergnano</td>

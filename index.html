@@ -12,7 +12,7 @@
             margin: 0;
             padding: 0;
             background-image: url('img/bgg.png');
-            background-size: cover;
+            background-size: auto ;
             background-attachment: fixed;
             background-color: transparent;
         }
@@ -55,7 +55,7 @@
         }
 
         .photo-item img {
-            max-width: 70%;
+            max-width: 60%;
             height: auto;
             width: 100%; /* Ajuster l'image à la largeur de l'écran */
             border-radius: 60px 60px 60px 60px;
@@ -70,8 +70,21 @@
             color: #000; /* Couleur du texte noire */
             margin: 0;
             font-size: 20px;
+        }
+        .social-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 200px; /* Ajustez la largeur en fonction de vos besoins */
+}
+.social-icons a {
+    text-decoration: none;
+}
+.social-icons img {
+    width: 60px;
+    height: 60px;
+    margin: 30 0px; /* Espacement entre les icônes (ajustez selon vos préférences) */
+}
 
-  }
 
     </style>
 </head>
@@ -89,18 +102,18 @@
             <img src="img/boutique.png" alt="Photo 2">
         </a>
     </br>
-    <div>
+    <div class="social-icons">
         <a href="https://m.facebook.com/profile.php/?id=100064879908655&name=xhp_nt__fb__action__open_user" target="_blank">
-            <img src="img/fblogo1.png" alt="Facebook" width="60" height="60">
+            <img src="img/fblogo1.png" alt="Facebook">
         </a>
         <a href="https://www.instagram.com/laboutiqueducafe1/" target="_blank">
-            <img src="img/instalogo.png" alt="Instagram" width="60" height="60">
+            <img src="img/instalogo.png" alt="Instagram">
         </a>
         <a href="https://wa.me/212661138859" target="_blank">
-            <img src="img/walogo.png" alt="WhatsApp" width="60" height="60">
+            <img src="img/walogo.png" alt="WhatsApp">
         </a>
-    </br>
-</div>
+    </div>
+    
     <div>
     </br>
     <a href="about.html" class="aboutus" >À propos de nous</a>
@@ -114,61 +127,6 @@
 </html>
 
     
-    <script>
-        function toggleSubMenu(item) {
-            var submenu = item.querySelector('.submenu');
-            if (submenu) {
-                // Check if the submenu is currently open
-                var isOpen = submenu.classList.contains('submenu-open');
-                
-                // Close all open submenus first
-                var allSubmenus = document.querySelectorAll('.submenu');
-                allSubmenus.forEach(function (element) {
-                    element.classList.remove('submenu-open');
-                });
-
-                // If the submenu is not open, open it
-                if (!isOpen) {
-                    submenu.classList.add('submenu-open');
-                }
-            }
-        }
-
-        // Event listener to close the submenu when clicking outside
-        document.addEventListener('click', function (event) {
-            var clickedElement = event.target;
-            if (!clickedElement.closest('.menu')) {
-                // Clicked outside the menu, so close all submenus
-                var allSubmenus = document.querySelectorAll('.submenu');
-                allSubmenus.forEach(function (element) {
-                    element.classList.remove('submenu-open');
-                });
-            }
-        });
-
-        // Get the menu items by their IDs
-const photo1Item = document.getElementById("photo1");
-const photo2Item = document.getElementById("photo2");
-const photo3Item = document.getElementById("photo3");
-
-// Define the links for each photo
-const photo1Link = "https://example.com/photo1";
-const photo2Link = "https://example.com/photo2";
-const photo3Link = "https://example.com/photo3";
-
-// Add click event listeners to the menu items
-photo1Item.addEventListener("click", () => {
-    window.location.href = photo1Link;
-});
-
-photo2Item.addEventListener("click", () => {
-    window.location.href = photo2Link;
-});
-
-photo3Item.addEventListener("click", () => {
-    window.location.href = photo3Link;
-});
-
-    </script>
+   
 </body>
 </html>
