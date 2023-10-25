@@ -8,6 +8,16 @@
     <link rel="icon" href="img/ico.ico" type="image/x-icon">
     <title>Menu - La boutique du café</title>
     <style>
+
+@font-face {
+            font-family: 'revenue';
+            src: url('Sources/revenue.ttf') format('truetype');
+        }
+        @font-face {
+            font-family: 'Belgiano';
+            src: url('Sources/Belgiano.otf') format('opentype');
+        }
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -25,11 +35,12 @@
         }
 
         .logo {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     position: fixed;
     bottom: 30px; /* Ajustez l'espacement vertical ici */
-    right: 10px; /* Ajustez l'espacement horizontal ici */
+    right: 1px; /* Ajustez l'espacement horizontal ici */
+    opacity: 0.8; /* Set opacity to 50% */
 }
         .bimg {
             width: 100%; /* Enlarge the image size */
@@ -48,13 +59,13 @@
 
         #texte {
             display: none;
-            font-family: 'Adobedevanagari', sans-serif;
-            font-weight: bold;
+            font-family: 'Belgiano', sans-serif;
+          /*  font-weight: bold;*/
             display: none;
             padding-top: 20px;
             background: rgba(255, 255, 255, 0.3); /* Ajoute un fond blanc transparent */
             padding: 5px; /* Espacement interne pour le cadre */
-            border: 1px solid rgba(0, 0, 0, 0.5); /* Ajoute un cadre transparent */
+            border: 1px solid rgba(69, 49, 3, 0.5); /* Ajoute un cadre transparent */
         }
 
         .centered {
@@ -109,6 +120,10 @@
 
   // Appeler la fonction pour afficher le texte progressivement
   afficherTexteProgressivement();
+  
+  document.addEventListener("contextmenu", function(e) {
+        e.preventDefault();
+    });
     </script>
 </body>
 </html>
